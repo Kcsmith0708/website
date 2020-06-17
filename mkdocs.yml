@@ -25,6 +25,9 @@ nav:
     - Rail Networking: 'start/rail-networking.md'
     - Automation: 'start/automation.md'
   - Hardware:
+    - FireBox:
+      - About FireBox: 'hardware/FireBox/intro.md'
+      - Setup: 'hardware/FireBox/setup.md'
     - Microcontrollers: 'hardware/microcontrollers.md'
     - Motor Boards: 'hardware/motor-boards.md'
     - I2C Displays: 'hardware/i2c-displays.md'
