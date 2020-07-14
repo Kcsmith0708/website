@@ -2,11 +2,11 @@
 
 ## Everything you loved is still there
 
-First, we want to stress that we didn't break anything! Whether you are using JMRI as a front end to send commands to your track, handle turnouts or read and write CVs, or any using any other software or the serial monitor, the commands are still the same. We have expanded the API (Application Programming Interface) to add new commands and provide new responses, but they won't affect your old control methods. One example of a new command is the one to handle turning power on and off to individual tracks.
+First, we want to stress that we didn't break anything! Whether you are using JMRI as a front end to send commands to your track, handle turnouts or read and write CVs, or any using any other software or the serial monitor, the commands are still the same. We have expanded the API (Application Programming Interface) to add new commands and provide new responses, but they won't affect your old control methods. One example of a new command is the one to handle turning power on and off to the individual Programming and Main tracks.
 
 ## DCC++ EX is all new!
 
-While we made minor changes to the original DCC++ "Classic", all new development in going forward with DCC++ EX. At first, we expanded features, added functionality and fixed bugs by working from the existing code base. The first release of DCC++ will be familiar to any of you who played with the code. However, we want to stress that the next release, the one that is in Beta testing now, is a complete re-write fromt he ground up.
+While we made minor changes to the original DCC++ "Classic", all new development in going forward with DCC++ EX. At first, we expanded features, added functionality and fixed bugs by working from the existing code base. The first release of DCC++ will be familiar to any of you who played with the code. However, we want to stress that the next release, the one that is in Beta testing now, is a complete re-write from the ground up.
 
 ## What's different? 
 
@@ -16,7 +16,7 @@ Next we focused on packet generation. We looked at the complexities of reading a
 
 We created an internal API for how modules communicated with each other. So the code is more modular and each unit is dedicated to its specific task.
 
-We completely re-wrote current sense and ACK detect routines.
+We completely re-wrote current sense on both Main and Programming track and ACK (acknowledge) detect routines on the Programming track.
 
 We created an automation scripting language called TPL (Train Programming Language)
 
@@ -40,7 +40,7 @@ TPL brings new capability to the world of automation. You don't have to be a pro
 
 ## The bottom line
 
-So while maintaining proper deference to Gregg Bermann's original concept of an inexpensive Control Station based on the Arduino platform, we don't want to do a disservice to DCC++ EX or develpers like Chris Harlow (UkBloke) and David Codding (David Codding) who brought a new vision to the project and who used very little of the original code. This is NOT DCC++ v2.0, this is a completely new, yet API and feature compatible Control Station. And just a tease: What Constrol Station would be complete without a wireless Cab Controller that speaks DCC++? Keep looking at our web page for new announcments.
+So while maintaining proper deference to Gregg Bermann's original concept of an inexpensive Control Station based on the Arduino platform, we don't want to do a disservice to DCC++ EX or develpers like Chris Harlow (UkBloke) and David Cutting (David Cutting) who brought a new vision to the project and who used very little of the original code. This is NOT DCC++ v2.0, this is a completely new, yet API and feature compatible Control Station. And just a tease: What Constrol Station would be complete without a wireless Cab Controller that speaks DCC++? Keep looking at our web page for new announcments.
 
 ## Thanks
 

@@ -1,4 +1,4 @@
-# The DCC++ EX Project
+﻿# The DCC++ EX Project
 
 Who is behind all this? And will they ever face justice? Who knows, but the following is a list of those names associated with taking over the DCC++ Base Station Project and advancing it into the future. 
 
@@ -61,8 +61,8 @@ _Names below in parenthesis are screen names on Trainboard and Discord_
 
 * Roger Beschizza - Dorset UK (Roger Beschizza)
 * Keith Ledbetter - Chicago, Illinois USA (Keith Ledbetter)
-* Kevin Smith - (KCSmith)
-
+* Kevin Smith - Rochester Hills, Michigan USA (KC Smith)
+ 
 ## Testing / Research / Support
 
 * Sumner Patterson - Blanding, Utah, USA (Sumner)
