@@ -1,38 +1,53 @@
 # DCC++ EX Starter Kit
 
-This guide is designed for do-it-yourselfers to build their own system. Anyone can do it, however if you don't feel technically inclined or just want to save the time, you can purchase a starter kit that contains:
+This guide is designed for do-it-yourselfers to build their own DCC++ Command & Control system. 
+Anyone can do it, All you need is a DCC Base Station and a DCC Controller station to run DCC engines;
 
-* __Controller:__ A Raspberry Pi with SD Card already configured with everything you need including the JMRI software. 
-* __Base Station:__ An Arduino with DCC++ software already uploaded and a Motor Controller Shield prepped and installed
+DCC++ Base Station (Command Station)
+  Arduino Micro Controller, 
+  Arduino compatible Motor Driver Shield 
+  15-18Vdc power supply
+  USB A to B cable
+  
+Controller Station
+ Java Model Railroad Interface Software JMRI running on either;
+  a PC Personal Computer (Win, Mac), 
+  Or alternatively a Raspberry Pi (linux) 
+
+# Additionally You Will Need
+- A "Main" track or "operations" - most people already have this, it's your layout
+- A "Programming" track or "service" track - a short section of track that you will use to program locomotives and other pieces of equipment
+- A known-good locomotive equipped with a DCC decoder
+
+
+However, if you don't feel technically inclined or just want to save the time, you can purchase a completed starter kit that contains:
+ * __DCC++ Base Station:__ An Arduino microcontroller and a Motor Shield prepped with DCC++ software already installed
+ * __JMRI Controller:__ A Raspberry Pi with microSD card already configured with everything you need including the JMRI Java Model Railroad Interface software. 
+                         'additional monitor and keyboard required'
 
 *Suppliers list coming soon*
 
-# What You Will Need
-
-- A "main" track or "operations" - most people already have this, it's your layout
-- A "programming" track or "service" track - a short section of track that you will use to program locomotives and other pieces of equipment
-- A known-good locomotive equipped with a DCC decoder
 
 ![DCC++ Overview](../images/dccpp_starter.png)
 
 ### Equipment List:
 
-#### Hardware
+#### Base Station Hardware, Choose one Arduino Microcontroller and one Motor Driver below
 
-* A compatible Arduino Board
+* A compatible Arduino Microcontroller Board
     * Arduino UNO R3 (clones work too)
     * Arduino Mega (clones work too)
     * Arduino Nano
-* A compatible motor driver shield
+* A compatible Motor Driver or Shield
     * Arduino Motor Driver Shield Rev 3 (clones work too)
     * Pololu MC33926 Dual Motor Driver Shield (https://www.pololu.com/product/2503)
     * Other boards listed in the hardware section
 * DC Power Supply (see [Power Supplies](../hardware/power-supplies.md)) 
-* USB A to B Cable (aka USB Printer Cable) to connect your Pi or computer to the Arduino
+* USB A to B Cable (aka USB Printer Cable) to connect your Computer or RaspberryPi to the Arduino
 * A MicroSD Card (for the Raspberry Pi if you choose to use one)
 * Computer to act as a controller to the Arduino Base Station \*
 
-We recommend:
+Recommendations:
 
 [Elegoo Mega 2560](https://www.amazon.com/ELEGOO-ATmega2560-ATMEGA16U2-Projects-Compliant/dp/B01H4ZLZLQ/ref=asc_df_B01H4ZLZLQ/?tag=hyprod-20&linkCode=df0&hvadid=309743296044&hvpos=&hvnetw=g&hvrand=2075336217815630856&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9009681&hvtargid=pla-490931309987&psc=1)
 
@@ -42,17 +57,19 @@ We recommend:
 
 [Raspberry Pi 4B](https://www.google.com/search?q=raspberry+pi+4&rlz=1C1CHVZ_enUS586US586&sxsrf=ALeKk00RT_osXNqIbJ_Xut4J5jqmo4mWjw:1592847200887&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjNidyc-pXqAhXPct8KHdPXA9kQ_AUoAXoECAwQAw&biw=1230&bih=617#spd=3143731532782929925)
 
-NOTE: You may use your own computer instead of the Raspberry Pi. However, the image software below saves you installing software on your computer and does a lot more. See: "My Computer vs. Raspberry Pi"
+NOTE: You may use your own PC computer instead of the Raspberry Pi. 
+However, the image software below saves you installing software on your computer and does a lot more. See: "My Computer vs. Raspberry Pi"
 
 You can check Amazon, Ebay, AliExpress, Banggood, Adafruit and others for all the above
 
 #### Software
 
 * [DCC++ EX Installer](https://github.com/DCC-EX/BaseStation-Installer/releases/tag/v2.0)
+* [JMRI (If you want to use your own PC computer)](https://www.jmri.org/)
 * [Steve Todd's Raspberry Pi Image](https://mstevetodd.com/rpi)
-* [JMRI (If you want to use your own computer)](https://www.jmri.org/)
 * [Arduino Software IDE to edit and upload changes (Optional)](https://www.arduino.cc/)
 
-\* As mentioned above you can also use your existing computer (PC or MAC) instead of a Pi. You need a computer or Pi to run JMRI and connect to the Arduino to run your trains. A laptop or similar is needed in any case because you are going to need one to download the installer and the Raspebrry Pi image. You will then use it to run the installer to  ccopy the program into the Arduino and copy the Raspberry Pi image you download to the MicroSD Card. NOTE: Optionally, you may just use the computer to download and burn the SDCard and then use the Pi to install the firmware onto the Arduino using our Installer.
+\* As mentioned above you can also use your existing computer (PC or MAC) instead of a RaspberryPi. You need a PC or Pi device to run JMRI and connect to the Arduino to run your trains. A laptop or similar is needed in any case because you are going to need one to download the DCC++ installer and the Raspebrry Pi image. You will then use a PC to run the DCC++ installer to copy the program into the Arduino and to copy and load the MicroSD Card image for Raspberry Pi.
+NOTE: Optionally, you may just use the computer to download and burn the SDCard and then use the Pi to install the firmware onto the Arduino using our Installer.
 
 Next Page: [Assembly](assembly.md)
